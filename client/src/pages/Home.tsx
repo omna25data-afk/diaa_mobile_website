@@ -7,8 +7,7 @@ import { categoryLabels, findLink, normalizeMediaUrl, usePublicSite } from "@/li
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = { Smartphone, Wifi, ReceiptText, Gamepad2 };
 
 export default function Home() {
-  const { data, isLoading } = usePublicSite();
-  if (isLoading) return <div className="min-h-screen bg-[#fbfcfa]" />;
+  const { data } = usePublicSite();
   const settings = data?.settings;
   const services = data?.services || [];
   const appUrl = findLink(data, "google_play", "https://play.google.com/store/apps/details?id=diaamobile.likhadmatsadad");
