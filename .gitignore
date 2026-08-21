@@ -3,7 +3,10 @@
 .pnpm-store/
 
 # Build outputs
-dist/
+dist/*
+!dist/index.js
+!dist/public/
+!dist/public/**
 build/
 *.dist
 
