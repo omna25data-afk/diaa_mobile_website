@@ -11,7 +11,7 @@ export default function Home() {
   const settings = data?.settings;
   const services = data?.services || [];
   const appUrl = findLink(data, "google_play", "https://play.google.com/store/apps/details?id=diaamobile.likhadmatsadad");
-  const heroImage = normalizeMediaUrl(settings?.heroImageUrl, "/media/diaa-app-promo-dark.jpg");
+  const heroImage = normalizeMediaUrl(settings?.heroImageUrl, "/media/diaa-app-promo-dark-hd.webp");
 
   return <PublicShell data={data}>
     <section className="relative isolate overflow-hidden bg-[#f5f9f7] pb-14 pt-12 lg:pb-24 lg:pt-20">
